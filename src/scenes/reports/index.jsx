@@ -16,10 +16,6 @@ const Reports = () => {
   const [fromDate, setFromDate] = useState('');
   const [toDate, setToDate] = useState('');
 
-  // useEffect(() => {
-  //   fetchReports();
-  // }, []);
-
   const fetchReports = async () => {
     try {
       const response = await axios.get(`https://newbackend-jb1f.onrender.com/api/reports?fromDate=${fromDate}&toDate=${toDate}`);
@@ -40,40 +36,40 @@ const Reports = () => {
 
   const columns = [
     {
-      field: "licenseType",
+      field: "license Plate",
       headerName: "License Plate",
       flex: 1,
       cellClassName: "name-column--cell",
     },
     {
-      field: "make",
+      field: "Make",
       headerName: "Make",
       type: "number",
       headerAlign: "left",
       align: "left",
     },
     {
-      field: "vin",
+      field: "VIN",
       headerName: "VIN",
       flex: 1,
     },
     {
-      field: "model",
+      field: "Model",
       headerName: "Model",
       flex: 1,
     },
     {
-      field: "type",
+      field: "Type",
       headerName: "Type",
       flex: 1,
     },
     {
-      field: "date",
+      field: "Date",
       headerName: "Date",
       flex: 1,
     },
     {
-      field: "milesDriven",
+      field: "Miles Driven",
       headerName: "Miles Driven",
       flex: 1,
     },
