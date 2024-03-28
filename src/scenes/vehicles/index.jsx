@@ -13,7 +13,7 @@ const Vehicles = () => {
   useEffect(() => {
     const fetchVehicles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/vehicles');
+        const response = await axios.get('https://newbackend-jb1f.onrender.com/api/vehicles');
         const vehiclesWithId = response.data.map((vehicle, index) => ({
           id: index + 1, // Assigning a unique id to each vehicle
           ...vehicle,

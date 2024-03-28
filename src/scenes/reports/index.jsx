@@ -22,7 +22,7 @@ const Reports = () => {
 
   const fetchReports = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/reports?fromDate=${fromDate}&toDate=${toDate}`);
+      const response = await axios.get(`https://newbackend-jb1f.onrender.com/api/reports?fromDate=${fromDate}&toDate=${toDate}`);
       const filteredReports = response.data.filter(report => {
         const reportDate = new Date(report.date);
         return reportDate >= new Date(fromDate) && reportDate <= new Date(toDate);
@@ -35,7 +35,7 @@ const Reports = () => {
     } catch (error) {
       console.error('Error fetching reports:', error);
     }
-  };
+  }; 
   
 
   const columns = [

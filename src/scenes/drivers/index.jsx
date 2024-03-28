@@ -13,12 +13,8 @@ const Drivers = () => {
   useEffect(() => {
     const fetchDrivers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/drivers');
-        const driversWithId = response.data.map((driver, index) => ({
-          id: index + 1, // Assigning a unique id to each driver
-          ...driver,
-        }));
-        setDrivers(driversWithId);
+        const response = await axios.get('https://newbackend-jb1f.onrender.com/api/drivers'); // Modified endpoint URL
+        setDrivers(response.data);
       } catch (error) {
         console.error('Error fetching drivers:', error);
       }

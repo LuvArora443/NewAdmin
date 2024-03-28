@@ -13,7 +13,7 @@ const Schedules = () => {
   useEffect(() => {
     const fetchSchedules = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/schedules');
+        const response = await axios.get('https://newbackend-jb1f.onrender.com/api/schedules');
         const schedulesWithId = response.data.map((schedule, index) => ({
           id: index + 1, // Assigning a unique id to each schedule
           ...schedule,
@@ -76,16 +76,7 @@ const Schedules = () => {
           "& .MuiDataGrid-virtualScroller": {
             backgroundColor: colors.primary[400],
           },
-          // "& .MuiDataGrid-footerContainer": {
-          //   borderTop: "none",
-          //   backgroundColor: colors.blueAccent[700],
-          // },
-          // "& .MuiCheckbox-root": {
-          //   color: `${colors.greenAccent[200]} !important`,
-          // },
-          // "& .MuiDataGrid-toolbarContainer .MuiButton-text": {
-          //   color: `${colors.grey[100]} !important`,
-          // },
+
         }}
       >
         <DataGrid
