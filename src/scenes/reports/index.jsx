@@ -36,7 +36,7 @@ const Reports = () => {
 
   const columns = [
     {
-      field: "license Plate",
+      field: "License Plate",
       headerName: "License Plate",
       flex: 1,
       cellClassName: "name-column--cell",
