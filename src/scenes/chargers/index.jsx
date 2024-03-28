@@ -110,7 +110,7 @@ const Chargers = () => {
   useEffect(() => {
     const fetchChargers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/chargers'); // Modified endpoint URL
+        const response = await axios.get('https://newbackend-jb1f.onrender.com/api/chargers'); // Modified endpoint URL
         setChargers(response.data);
       } catch (error) {
         console.error('Error fetching chargers:', error);
