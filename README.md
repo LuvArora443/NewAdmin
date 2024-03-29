@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# The website is live on https://newadmin-03hk.onrender.com
+Please give it a watch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/LuvArora443/NewAdmin/assets/139987286/3616fda7-4972-4d1f-8e81-25d6d50d9203)
+
+## You can even download the ```pdf``` with the reports
+### Sample 
+![image](https://github.com/LuvArora443/NewAdmin/assets/139987286/d468704b-918f-4024-b21f-4a904ed92cac)
+
+## You can even find a ```csv``` with the generated datagram
+### Sample
+![image](https://github.com/LuvArora443/NewAdmin/assets/139987286/1da1c903-2af1-49b1-88eb-94019f39f6fb)
 
 ## Available Scripts
 
